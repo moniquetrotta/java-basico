@@ -1,7 +1,12 @@
 public class MinhaClasse {
   public static void main(String[] args) {
-    System.out.print("Olá Mundo!");
+    String primeiroNome = "Monique";
+    String segundoNome = "Trotta";
+    String nomeCompleto = nomeCompleto(primeiroNome, segundoNome);
+    System.out.println(nomeCompleto);
+  }
 
-    final String BR = "Brasil"; // variavel que nao muda
+  public static String nomeCompleto(String primeiroNome, String segundoNome) {
+    return "Resultado do método " + primeiroNome.concat(" ").concat(segundoNome);
   }
 }
